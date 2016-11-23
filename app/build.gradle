@@ -26,4 +26,9 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+
+    // recycler view
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    // butter knife
+    compile 'com.jakewharton:butterknife:8.1.0'
 }
