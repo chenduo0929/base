@@ -28,6 +28,8 @@ public abstract class BaseFragment extends Fragment {
 
         mUnbinder = ButterKnife.bind(this, root);
 
+        init();
+
         return root;
     }
 
@@ -43,5 +45,7 @@ public abstract class BaseFragment extends Fragment {
     }
 
     abstract protected int getLayoutResourceId();
+
+    abstract protected void init();
 
 }

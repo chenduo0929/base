@@ -1,11 +1,18 @@
+
 package com.example.chenduo.cdtemplate.sample;
 
 import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
 
 import com.example.chenduo.cdtemplate.BaseFragment;
 import com.example.chenduo.cdtemplate.R;
 
+import butterknife.BindView;
+
 public class SampleFragment extends BaseFragment implements SampleContract.View {
+    @BindView(R.id.contentList)
+    RecyclerView mContentList;
+
     private SampleContract.Presenter mPresenter;
 
     public static SampleFragment newInstance() {
@@ -35,6 +42,10 @@ public class SampleFragment extends BaseFragment implements SampleContract.View 
     @Override
     protected int getLayoutResourceId() {
         return R.layout.fragment_sample;
+    }
+
+    @Override
+    protected void init() {
     }
 
 }
