@@ -18,14 +18,16 @@ public class SampleActivity extends BaseActivity {
     }
 
     protected void initContent() {
-        SampleFragment tasksFragment = (SampleFragment) getSupportFragmentManager()
+        SampleFragment sampleFragment = (SampleFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
-        if (tasksFragment == null) {
+        if (sampleFragment == null) {
             // Create the fragment
-            tasksFragment = SampleFragment.newInstance();
+            sampleFragment = SampleFragment.newInstance();
             ActivityUtils.addFragmentToActivity(
-                    getSupportFragmentManager(), tasksFragment, R.id.contentFrame);
+                    getSupportFragmentManager(), sampleFragment, R.id.contentFrame);
         }
+
+        new SamplePresenter(sampleFragment);
     }
 
 }

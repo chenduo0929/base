@@ -1,9 +1,13 @@
+
 package com.example.chenduo.cdtemplate.sample;
 
 public class SamplePresenter implements SampleContract.Presenter {
 
-    public SamplePresenter() {
+    SampleContract.View mView;
 
+    public SamplePresenter(SampleContract.View view) {
+        mView = view;
+        view.setPresenter(this);
     }
 
     @Override

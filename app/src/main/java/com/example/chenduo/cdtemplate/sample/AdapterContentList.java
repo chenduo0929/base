@@ -1,3 +1,4 @@
+
 package com.example.chenduo.cdtemplate.sample;
 
 import android.content.Context;
@@ -32,7 +33,7 @@ public class AdapterContentList extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 3;
     }
 
     class ItemHolder extends RecyclerView.ViewHolder {
