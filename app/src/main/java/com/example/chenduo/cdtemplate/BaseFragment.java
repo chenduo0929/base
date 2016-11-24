@@ -1,5 +1,5 @@
-package com.example.chenduo.cdtemplate;
 
+package com.example.chenduo.cdtemplate;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,18 +15,18 @@ import butterknife.Unbinder;
  */
 public abstract class BaseFragment extends Fragment {
 
-
     public BaseFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View root = inflater.inflate(getLayoutResourceId(), container, false);
 
         mUnbinder = ButterKnife.bind(this, root);
+
+        init();
 
         return root;
     }
@@ -43,5 +43,7 @@ public abstract class BaseFragment extends Fragment {
     }
 
     abstract protected int getLayoutResourceId();
+
+    abstract protected void init();
 
 }
