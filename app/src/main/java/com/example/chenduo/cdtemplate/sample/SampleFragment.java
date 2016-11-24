@@ -2,6 +2,7 @@
 package com.example.chenduo.cdtemplate.sample;
 
 import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.chenduo.cdtemplate.BaseFragment;
@@ -46,6 +47,8 @@ public class SampleFragment extends BaseFragment implements SampleContract.View 
 
     @Override
     protected void init() {
+        mContentList.setLayoutManager(new LinearLayoutManager(getContext()));
+        mContentList.setAdapter(new AdapterContentList(getContext()));
     }
 
 }
