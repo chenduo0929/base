@@ -42,14 +42,33 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    // recycler view
-    // butter knife
+    /* support */
     compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+
+    /* recyclerview */
     compile 'com.android.support:recyclerview-v7:24.2.1'
+
+    /* junit */
+    testCompile 'junit:junit:4.12'
+
+    /*butterknife*/
     compile 'com.jakewharton:butterknife:8.1.0'
     apt 'com.jakewharton:butterknife-compiler:8.1.0'
-    compile 'com.android.support:support-v4:24.2.1'
-    testCompile 'junit:junit:4.12'
+
+    /*rx-android-java*/
+    compile 'io.reactivex:rxjava:+'
+    compile 'com.trello:rxlifecycle:+'
+    compile 'com.trello:rxlifecycle-components:+'
+
+    /*greendao*/
     compile 'org.greenrobot:greendao:3.1.1'
     compile 'org.greenrobot:greendao-generator:3.1.0'
+
+    /*retrofit*/
+    compile 'com.squareup.retrofit2:retrofit:+'
+    compile 'com.squareup.retrofit2:converter-gson:+'
+    compile 'com.squareup.retrofit2:adapter-rxjava:+'
+    compile 'com.google.code.gson:gson:+'
+
 }

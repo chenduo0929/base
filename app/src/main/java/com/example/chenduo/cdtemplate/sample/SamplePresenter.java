@@ -3,12 +3,15 @@ package com.example.chenduo.cdtemplate.sample;
 
 import android.content.Context;
 
-import com.chenduo.dao.UserDao;
 import com.example.chenduo.cdtemplate.bean.User;
 import com.example.chenduo.cdtemplate.utils.GreenDaoUtils;
 import com.example.chenduo.cdtemplate.utils.Once;
 
+import org.greenrobot.greendao.rx.RxDao;
+
 import java.util.List;
+
+import rx.functions.Action1;
 
 public class SamplePresenter implements SampleContract.Presenter {
 
@@ -36,7 +39,7 @@ public class SamplePresenter implements SampleContract.Presenter {
     }
 
     void loadDataFromDB() {
-        final UserDao dao = GreenDaoUtils.getInstance().getmDaoSession().getUserDao();
+        final RxDao dao = GreenDaoUtils.getInstance().getmDaoSession().getUserDao().rx();
 
         new Once(mContext).call("DB_INIT", new Once.OnceCallback() {
             @Override
@@ -49,8 +52,14 @@ public class SamplePresenter implements SampleContract.Presenter {
             }
         });
 
-        List<User> list = dao.loadAll();
-        mView.updateUserList(list);
+        // greenDao结合rxjava
+        dao.loadAll().subscribe(new Action1<List<User>>() {
+            @Override
+            public void call(List<User> list) {
+                mView.updateUserList(list);
+            }
+        });
+
     }
 
 }
