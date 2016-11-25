@@ -7,6 +7,9 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.chenduo.cdtemplate.BaseFragment;
 import com.example.chenduo.cdtemplate.R;
+import com.example.chenduo.cdtemplate.bean.User;
+
+import java.util.List;
 
 import butterknife.BindView;
 
@@ -51,4 +54,8 @@ public class SampleFragment extends BaseFragment implements SampleContract.View 
         mContentList.setAdapter(new AdapterContentList(getContext()));
     }
 
+    @Override
+    public void updateUserList(List<User> userList) {
+        ((AdapterContentList) mContentList.getAdapter()).updateUserList(userList);
+    }
 }

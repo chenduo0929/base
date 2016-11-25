@@ -27,7 +27,7 @@ public class SampleActivity extends BaseActivity {
                     getSupportFragmentManager(), sampleFragment, R.id.contentFrame);
         }
 
-        new SamplePresenter(sampleFragment);
+        new SamplePresenter(this, sampleFragment);
     }
 
 }
