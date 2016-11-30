@@ -1,4 +1,4 @@
-package com.chenduo.dao;
+package com.example.chenduo.cdtemplate.dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

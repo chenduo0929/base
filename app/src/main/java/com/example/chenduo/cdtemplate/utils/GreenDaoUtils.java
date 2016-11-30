@@ -3,9 +3,9 @@ package com.example.chenduo.cdtemplate.utils;
 
 import android.database.sqlite.SQLiteDatabase;
 
-import com.chenduo.dao.DaoMaster;
-import com.chenduo.dao.DaoSession;
 import com.example.chenduo.cdtemplate.MyApplication;
+import com.example.chenduo.cdtemplate.dao.DaoMaster;
+import com.example.chenduo.cdtemplate.dao.DaoSession;
 
 /**
  * Created by chenduo on 16-11-25.

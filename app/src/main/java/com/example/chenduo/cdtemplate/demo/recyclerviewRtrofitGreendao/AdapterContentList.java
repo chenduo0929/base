@@ -1,5 +1,5 @@
 
-package com.example.chenduo.cdtemplate.sample;
+package com.example.chenduo.cdtemplate.demo.recyclerviewRtrofitGreendao;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

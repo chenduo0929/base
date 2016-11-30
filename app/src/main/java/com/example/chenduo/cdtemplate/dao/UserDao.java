@@ -1,4 +1,4 @@
-package com.chenduo.dao;
+package com.example.chenduo.cdtemplate.dao;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteStatement;

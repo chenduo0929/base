@@ -1,4 +1,4 @@
-package com.example.chenduo.cdtemplate.sample;
+package com.example.chenduo.cdtemplate.demo.recyclerviewRtrofitGreendao;
 
 import com.example.chenduo.cdtemplate.BasePresenter;
 import com.example.chenduo.cdtemplate.BaseView;

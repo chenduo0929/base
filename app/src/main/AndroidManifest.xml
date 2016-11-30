@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sample.SampleActivity" />
+        <activity android:name=".demo.recyclerviewRtrofitGreendao.SampleActivity" />
+        <activity android:name=".demo.supportDesign.DemoSupportDesignActivity" />
     </application>
 
 </manifest>
