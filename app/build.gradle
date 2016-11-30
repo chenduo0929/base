@@ -22,9 +22,9 @@ android {
         }
     }
 
-    configurations.all {
-        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
-    }
+//    configurations.all {
+//        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+//    }
 }
 
 /*butterknife*/
@@ -44,7 +44,6 @@ greendao {
     targetGenDir 'src/main/java'
     /* Test 可添加单元测试路径 */
 }
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -69,8 +68,11 @@ dependencies {
 
     /*rx-android-java*/
     compile 'io.reactivex:rxjava:+'
-    compile 'com.trello:rxlifecycle:+'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    /* 引入后会导致gradle编译不过，报冲突异常， 去掉configurations.all配置注释可以编过，TODO：研究此现象
     compile 'com.trello:rxlifecycle-components:+'
+    compile 'com.trello:rxlifecycle:+'
+    */
 
     /*greendao*/
     compile 'org.greenrobot:greendao:3.1.1'
@@ -91,3 +93,4 @@ dependencies {
     // compile 'com.plattysoft.leonids:LeonidsLib:1.3.2'
 
 }
+
