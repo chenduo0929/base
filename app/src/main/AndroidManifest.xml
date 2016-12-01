@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".demo.recyclerviewRtrofitGreendao.SampleActivity" />
         <activity android:name=".demo.supportDesign.DemoSupportDesignActivity" />
+        <activity android:name=".demo.transition.DemoTransitionActivity"></activity>
     </application>
 
 </manifest>

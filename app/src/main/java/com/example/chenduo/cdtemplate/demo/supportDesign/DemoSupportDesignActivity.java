@@ -1,15 +1,13 @@
 
 package com.example.chenduo.cdtemplate.demo.supportDesign;
 
-import android.graphics.drawable.Animatable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.example.chenduo.cdtemplate.R;
 
@@ -21,6 +19,8 @@ public class DemoSupportDesignActivity extends AppCompatActivity {
 
     @BindView(R.id.contentList)
     RecyclerView mContentList;
+    @BindView(R.id.faboptions_fab)
+    FloatingActionButton mFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +44,12 @@ public class DemoSupportDesignActivity extends AppCompatActivity {
             R.id.fab
     })
     public void onClick(View view) {
-        if (view instanceof ImageView) {
-            Drawable d = ((ImageView) view).getDrawable();
-            if (d instanceof Animatable) {
-                ((Animatable) d).start();
-            }
+        switch (view.getId()) {
+            case R.id.fab:
+                // 提示条，Toast的延伸版
+                Snackbar.make(view, "FAB", Snackbar.LENGTH_SHORT).show();
+                break;
         }
-        // 提示条，Toast的延伸版
-        Snackbar.make(view, "FAB", Snackbar.LENGTH_SHORT).show();
     }
 
 }

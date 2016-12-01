@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.chenduo.cdtemplate.demo.recyclerviewRtrofitGreendao.SampleActivity;
 import com.example.chenduo.cdtemplate.demo.supportDesign.DemoSupportDesignActivity;
+import com.example.chenduo.cdtemplate.demo.transition.DemoTransitionActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({
-            R.id.DemoRRG, R.id.DemoSD
+            R.id.DemoRRG, R.id.DemoSD, R.id.DemoTransition
     })
     public void onClick(View view) {
         switch (view.getId()) {
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.DemoSD:
                 startActivity(new Intent(this, DemoSupportDesignActivity.class));
                 break;
+            case R.id.DemoTransition:
+                startActivity(new Intent(this, DemoTransitionActivity.class));
         }
     }
 }
