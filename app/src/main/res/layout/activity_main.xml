@@ -17,19 +17,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="DemoRRG" />
+        android:text="Demo_RRG" />
 
     <Button
         android:id="@+id/DemoSD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="DemoSD" />
+        android:text="Demo_SD" />
 
     <Button
         android:id="@+id/DemoTransition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="DemoTransition" />
+        android:text="Demo_Transition" />
+
+    <Button
+        android:id="@+id/DemoMetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Demo_Metro" />
 </LinearLayout>

@@ -2,7 +2,6 @@
 package com.example.chenduo.cdtemplate.demo.supportDesign;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,8 +18,6 @@ public class DemoSupportDesignActivity extends AppCompatActivity {
 
     @BindView(R.id.contentList)
     RecyclerView mContentList;
-    @BindView(R.id.faboptions_fab)
-    FloatingActionButton mFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

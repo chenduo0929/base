@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.chenduo.cdtemplate.demo.metro.DemoMetroActivity;
 import com.example.chenduo.cdtemplate.demo.recyclerviewRtrofitGreendao.SampleActivity;
 import com.example.chenduo.cdtemplate.demo.supportDesign.DemoSupportDesignActivity;
 import com.example.chenduo.cdtemplate.demo.transition.DemoTransitionActivity;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({
-            R.id.DemoRRG, R.id.DemoSD, R.id.DemoTransition
+            R.id.DemoRRG, R.id.DemoSD, R.id.DemoTransition, R.id.DemoMetro
     })
     public void onClick(View view) {
         switch (view.getId()) {
@@ -35,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.DemoTransition:
                 startActivity(new Intent(this, DemoTransitionActivity.class));
+                break;
+            case R.id.DemoMetro:
+                startActivity(new Intent(this, DemoMetroActivity.class));
+                break;
         }
     }
 }

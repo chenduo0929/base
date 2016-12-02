@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.example.chenduo.cdtemplate.demo.metro.MetroLayout
+            android:id="@+id/metrolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="80dp"
+            android:paddingRight="50dp"
+            android:paddingTop="30dp">
+
+        </com.example.chenduo.cdtemplate.demo.metro.MetroLayout>
+    </HorizontalScrollView>
+
+    <com.example.chenduo.cdtemplate.demo.metro.MetroCursorView
+        android:id="@+id/metrocursor"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</FrameLayout>
