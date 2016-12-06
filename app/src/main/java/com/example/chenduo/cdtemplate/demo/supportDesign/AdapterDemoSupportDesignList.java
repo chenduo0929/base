@@ -37,6 +37,11 @@ public class AdapterDemoSupportDesignList extends RecyclerView.Adapter {
         return 50;
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
+
     class ItemHolder extends RecyclerView.ViewHolder {
 
         public ItemHolder(View itemView) {
