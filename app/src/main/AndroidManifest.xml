@@ -23,7 +23,8 @@
         <activity android:name=".demo.transition.DemoTransitionActivity" />
         <activity
             android:name=".demo.metro.DemoMetroActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
+        <activity android:name=".demo.folderlayout.FolderLayoutDemo"></activity>
     </application>
 
 </manifest>

@@ -88,24 +88,33 @@ dependencies {
     /* material dimens and colors */
     compile 'com.dmitrymalkovich.android:material-design-dimens:1.4'
 
-    /* Particle systems are often used in games for a wide range of purposes:
-        Explosions, fire, smoke, rain, snow, leaf-down etc. */
+    /* ***************************
+    Particle systems are often used in games for a wide range of purposes:
+        Explosions, fire, smoke, rain, snow, leaf-down etc.
+    ****************************** */
     // compile 'com.plattysoft.leonids:LeonidsLib:1.3.2'
 
-    /* androidutil 开发中不断使用加深了解
+    /* ***************************
+    *   androidutil 开发中不断使用加深了解
     *
     *   项目地址：https://github.com/Blankj/AndroidUtilCode
     *
     *   -keep class com.blankj.utilcode.** { *; }
         -keepclassmembers class com.blankj.utilcode.** { *; }
         -dontwarn com.blankj.utilcode.**
-    * */
+    **************************** */
     // compile 'com.blankj:utilcode:1.3.4'
 
-    /*
-    *   一个mvp核心框架，项目地址：https://github.com/SuperMan42/MVP
-     */
+    /* ***************************
+      一个mvp核心框架，项目地址：https://github.com/SuperMan42/MVP
+    *************************** */
     //compile 'com.hpw.mvpframe.core.1.0.0'
+
+    /* ****************************
+      一个很好的RecyclerView的BaseAdapter
+      项目地址：https://github.com/hongyangAndroid/baseAdapter
+    **************************** */
+    //compile 'com.zhy:base-rvadapter:3.0.3'
 
 }
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.chenduo.cdtemplate.demo.folderlayout.FolderLayoutDemo;
 import com.example.chenduo.cdtemplate.demo.metro.DemoMetroActivity;
 import com.example.chenduo.cdtemplate.demo.recyclerviewRtrofitGreendao.SampleActivity;
 import com.example.chenduo.cdtemplate.demo.supportDesign.DemoSupportDesignActivity;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({
-            R.id.DemoRRG, R.id.DemoSD, R.id.DemoTransition, R.id.DemoMetro
+            R.id.DemoRRG, R.id.DemoSD, R.id.DemoTransition, R.id.DemoMetro, R.id.DemoFolder
     })
     public void onClick(View view) {
         switch (view.getId()) {
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.DemoMetro:
                 startActivity(new Intent(this, DemoMetroActivity.class));
+                break;
+            case R.id.DemoFolder:
+                startActivity(new Intent(this, FolderLayoutDemo.class));
                 break;
         }
     }
