@@ -116,5 +116,15 @@ dependencies {
     **************************** */
     //compile 'com.zhy:base-rvadapter:3.0.3'
 
+    /* **************************
+        项目： https://github.com/Mr-XiaoLiang/LView-AS
+              提供了很多自定义的view，如有需要，可以参考
+    ××××××××××××××××××××××××××× */
+
+    /* **************************
+    项目： https://github.com/liaohuqiu/Android-Ultra-Pull-To-Refresh
+    描述： 下拉刷新框架，支持各种view，支持自定义headerview
+    参考： http://blog.csdn.net/mcy478643968/article/details/47401013
+    ××××××××××××××××××××××××××× */
 }
 
